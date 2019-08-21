@@ -2,12 +2,12 @@
 // Configuration
 //----------------------
 
-configuration {
-	modi: 			"drun,run";
-	width: 			750;
-	lines: 			13;
-	font: 			"Hack 12";
-	show-match: 		false;
-	separator-style: 	"solid";
-	hide-scrollbar: 	true;
-theme: 				"~/.config/rofi/nord.rasi";
+	rofi.modi: 			    drun,run
+	rofi.width: 			750
+	rofi.lines: 			13
+	rofi.font: 			    Hack 12
+	rofi.show-match: 		false
+	rofi.separator-style: 	solid
+	rofi.hide-scrollbar: 	true
+    rofi.theme: 			nord
+

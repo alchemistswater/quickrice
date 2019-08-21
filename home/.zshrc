@@ -2,7 +2,9 @@ ZSH=/usr/share/oh-my-zsh/
 ZSH_CUSTOM=~/.config/zsh/
 ZSH_THEME="mytheme"
 DISABLE_AUTO_UPDATE="true"
+FZF_BASE="/usr/share/fzf"
 plugins=(
+    fzf
     git
     z
     cp

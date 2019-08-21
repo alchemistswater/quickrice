@@ -148,7 +148,7 @@ colors:
   # Example:
   #   `- { index: 16, color: '0xff00ff' }`
   #
-  indexed_colors: []
+  #indexed_colors: []
 
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
 # rung, the terminal background will be set to white and transition back to the

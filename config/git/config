@@ -17,3 +17,6 @@
     old = red bold
     new = green bold
     whitespace = red reverse
+[user]
+	email = silentfoof@thesifr.com
+	name = silent foof
