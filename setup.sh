@@ -5,7 +5,7 @@ export LINKDOT=$PWD
 
 # Install fonts and programs. Including two WMs, a terminal emulator
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
-sudo pacman -S ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
+sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv pass \
     alacritty alacritty-terminfo compton neofetch dash neovim maim \
     feh firefox i3-gaps sxhkd dunst zathura-pdf-mupdf libnotify xclip \
@@ -51,18 +51,14 @@ mkdir -p ~/.config ~/.aurpkgs ~/Images/Captures ~/Images/Wallpapers \
 # Move provided wallpapers to the wallpapers folder
 mv -n wallpapers/* ~/Images/Wallpapers
 
-# Clone the aur packages being installed. Polybar and Oh-My-Zsh
-git clone https://aur.archlinux.org/oh-my-zsh-git.git ~/.aurpkgs/oh-my-zsh-git
-git clone https://aur.archlinux.org/polybar.git ~/.aurpkgs/polybar
+# Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
 
 # Install them
-cd ~/.aurpkgs/oh-my-zsh-git
-makepkg -si
-cd ~/.aurpkgs/polybar
-makepkg -si
 cd ~/.aurpkgs/yay
 makepkg -si
+
+yay -S polybar oh-my-zsh-git ckb-next steam steam-native-runtime
 
 # Link all dotfiles into their appropriate locations
 cd ~

@@ -256,9 +256,9 @@ date-alt = " %Y-%m-%d"
 time = %I:%M
 time-alt = %H:%M:%S
 
-format-prefix = TIM 
+format-prefix = date:
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #53BDFA
+format-underline = ${colors.background-alt}
 
 label = %date% %time%
 
@@ -266,7 +266,7 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume>
-label-volume = VOL %percentage%%
+label-volume = vol: %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = muted
