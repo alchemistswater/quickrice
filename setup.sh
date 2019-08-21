@@ -25,7 +25,6 @@ esac
 read -p "-- Install extras? (ranger fd bat ripgrep httpie sxiv fzf) [Y/n] " ynb
 case $ynb in
     ''|[Yy]* ) sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
-        patch home/.zshrc < other/add-fzf.patch
         ;;
     * ) echo "-- Extras Skipped";;
 esac
