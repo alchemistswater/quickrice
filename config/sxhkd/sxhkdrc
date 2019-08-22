@@ -20,6 +20,20 @@ XF86AudioLowerVolume
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+# Media Control
+XF86AudioPlay
+    mpc toggle
+XF86AudioStop
+    mpc stop
+XF86AudioNext
+    mpc next
+XF86AudioPrev
+    mpc prev
+super + XF86AudioRaiseVolume
+    mpc volume +5
+super + XF86AudioRaiseVolume
+    mpc volume -5
+
 # Terminal Emulator
 super + Return
     alacritty	
@@ -27,6 +41,10 @@ super + Return
 # Program Launcher
 super + space
     rofi -show run	
+
+# Pass Launcher
+super + shift + d
+    rofi-pass
 
 # Reload this sxhkd config file 
 super + Escape

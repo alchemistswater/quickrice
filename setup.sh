@@ -57,7 +57,7 @@ git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
 cd ~/.aurpkgs/yay
 makepkg -si
 
-yay -S polybar oh-my-zsh-git ckb-next steam steam-native-runtime
+yay -S polybar oh-my-zsh-git ckb-next steam steam-native-runtime mpdscribble
 
 # Link all dotfiles into their appropriate locations
 cd ~
