@@ -6,3 +6,4 @@ config/mpd/pid
 config/mpd/state
 config/mpd/playlists
 config/mpd/sticker.sql
+config/mpv/watch_later
