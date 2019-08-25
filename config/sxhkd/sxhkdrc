@@ -39,12 +39,16 @@ super + Return
     alacritty	
 
 # Program Launcher
-super + space
+super + d
     rofi -show run	
 
 # Pass Launcher
 super + shift + d
     rofi-pass
+
+# screen lock
+super + shift + z
+    glitchlock
 
 # Reload this sxhkd config file 
 super + Escape

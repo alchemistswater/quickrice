@@ -31,5 +31,5 @@ fi
 [ ! -s ~/.config/mpd/pid] && mpd &
 [ ! -s ~/.mpdscribble/pid] && mpdscribble &
 
-exec i3 
+exec herbstluftwm 
 

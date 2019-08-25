@@ -36,7 +36,7 @@ font pango:Hack 10
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/Images/wallhaven-4x8kdd.png --nofork
 
 # Use pactl to adjust volume in PulseAudio.
 # These are bound in sxhkd
@@ -48,6 +48,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Lockscreen
+bindsym $mod+Shift+z exec i3lock -i ~/Images/wallhaven-4x8kdd.png
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -191,8 +194,8 @@ bindsym $mod+r mode "resize"
 #}
 
 for_window [class=".*"] border pixel 0
-gaps inner 25
-gaps top 25 
+gaps inner 10
+gaps top 20 
 
 # The first three will not be run on i3 restart. This is to avoid memory problems.
 exec --no-startup-id compton --config ~/.config/compton/i3compton.conf 
@@ -200,5 +203,7 @@ exec --no-startup-id polybar i3
 exec --no-startup-id sxhkd
 exec --no-startup-id steam
 exec --no-startup-id ckb-next
+exec --no-startup-id nextcloud
+exec_always --no-startup-id redshift-qt
 exec_always --no-startup-id feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers
 
