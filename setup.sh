@@ -7,10 +7,11 @@ export LINKDOT=$PWD
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv pass \
-    alacritty alacritty-terminfo compton neofetch dash neovim maim \
-    feh firefox i3-gaps sxhkd dunst zathura-pdf-mupdf libnotify xclip \
+    alacritty alacritty-terminfo neofetch dash neovim scrot \
+    feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
     diff-so-fancy zsh-autosuggestions zsh-syntax-highlighting \
-    xorg-server xorg-xinit xorg-xrdb xorg-xprop pulseaudio-alsa exa
+    xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
+    pulseaudio-alsa exa pavucontrol
 
 read -p "-- For music, use mpd + ncmpcpp instead of cmus? [y/N] " yna
 case $yna in
@@ -57,7 +58,9 @@ git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
 cd ~/.aurpkgs/yay
 makepkg -si
 
-yay -S polybar oh-my-zsh-git ckb-next steam steam-native-runtime mpdscribble
+yay -S polybar compton-tryone-git rofi-pass pass-otp \
+    oh-my-zsh-git ckb-next steam steam-native-runtime \
+    mpdscribble redshift-qt
 
 # Link all dotfiles into their appropriate locations
 cd ~

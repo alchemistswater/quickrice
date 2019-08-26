@@ -17,6 +17,12 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+if [ -n "$DISPLAY" ]; then
+    export BROWSER=firefox
+else 
+    export BROWSER=links
+fi
+
 [[ -f "$ZSH/oh-my-zsh.sh" ]] \
 	&& source $ZSH/oh-my-zsh.sh
 
