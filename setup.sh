@@ -49,7 +49,7 @@ mkdir -p ~/.config ~/.aurpkgs ~/Images/Captures ~/Images/Wallpapers \
     $LINKDOT/config/mpd/playlists ~/Music
 
 # Move provided wallpapers to the wallpapers folder
-mv -n wallpapers/* ~/Images/Wallpapers
+cp wallpapers/* ~/Images/Wallpapers
 
 # Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
