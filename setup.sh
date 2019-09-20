@@ -60,7 +60,7 @@ makepkg -si
 
 yay -S polybar compton-tryone-git rofi-pass pass-otp \
     oh-my-zsh-git ckb-next steam steam-native-runtime \
-    mpdscribble redshift-qt
+    mpdscribble redshift-qt sox imagemagick i3lock
 
 # Link all dotfiles into their appropriate locations
 cd ~
