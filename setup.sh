@@ -7,7 +7,7 @@ export LINKDOT=$PWD
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv pass \
-    alacritty alacritty-terminfo neofetch dash neovim scrot \
+    kitty kitty-terminfo neofetch dash vis scrot \
     feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
     diff-so-fancy zsh-autosuggestions zsh-syntax-highlighting \
     xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \

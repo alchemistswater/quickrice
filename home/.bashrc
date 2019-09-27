@@ -23,7 +23,7 @@ source ~/.bashalias
 #source ~/.cache/wal/colors-tty.sh
 export EDITOR=vim
 if [ -n "$DISPLAY" ]; then
-    export BROWSER=firefox
+    export BROWSER=surf
 else 
     export BROWSER=w3m
 fi

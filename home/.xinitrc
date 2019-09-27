@@ -31,5 +31,6 @@ fi
 [ ! -s ~/.config/mpd/pid] && mpd &
 [ ! -s ~/.mpdscribble/pid] && mpdscribble &
 
+#exec xmonad
 exec herbstluftwm 
-
+#exec berry

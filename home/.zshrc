@@ -18,10 +18,17 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 if [ -n "$DISPLAY" ]; then
-    export BROWSER=firefox
+    export BROWSER=surf
 else 
-    export BROWSER=links
+    export BROWSER=w3m
 fi
+
+alias accio='sudo bb-wrapper -S --aur '
+alias erised='bb-wrapper -Ss --aur '
+alias ascendio='sudo bb-wrapper -Syu --aur '
+alias vim='vis'
+alias vi='vis'
+alias nvim='vis'
 
 [[ -f "$ZSH/oh-my-zsh.sh" ]] \
 	&& source $ZSH/oh-my-zsh.sh
