@@ -21,13 +21,13 @@ source ~/.bashalias
 
 # To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
-export EDITOR=vim
+export EDITOR=vis
 if [ -n "$DISPLAY" ]; then
-    export BROWSER=surf
+    export BROWSER=firefox
 else 
     export BROWSER=w3m
 fi
-source /usr/share/bash-completion/bash_completion
+#source /usr/share/bash-completion/bash_completion
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'

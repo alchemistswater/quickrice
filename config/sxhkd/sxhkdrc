@@ -36,7 +36,11 @@ super + XF86AudioRaiseVolume
 
 # Terminal Emulator
 super + Return
-    kitty	
+    xterm	
+
+# Browser
+super + w
+   firefox
 
 # Program Launcher
 super + d
