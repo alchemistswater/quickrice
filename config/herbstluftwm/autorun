@@ -1,11 +1,10 @@
-compton --config ~/.config/compton/i3compton.conf &
+compton -b
 dunst &
 feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers &
 sxhkd &
 mpd &
 mpdscribble &
-nextcloud &
 ckb-next &
 steam &
-redshift-qt &
+redshift &
 synergy &

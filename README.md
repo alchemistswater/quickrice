@@ -4,24 +4,24 @@
 
 As per usual, I stole this shit from https://github.com/tonijarjour/autorice then modified the crap out of it. All credit goes to them, I just made it work for me.
 
-Programs have been chosen carefully based on their performance and utility. At the same time, not too many are included. To keep it lean, command line tools make up the majority of what you will be getting. It's up to you to install the rest. 
+Programs have been chosen at random based on other peoples skill and knowledge. At the same time, probably too many are included. To keep it lean, command line tools make up the majority of what you will be getting. It's up to you to install the rest. 
 
 **Default programs**
 
 * **Window Manager**: herbstluftwm
-* **Terminal**: Alacritty
+* **Terminal**: Kitty
 * **Status Bar**: Polybar
 * **Shell**: Oh My Zsh 
 * **App Launcher**: Rofi
 * **System Info**: Neofetch
-* **Text Editor**: Neovim
+* **Text Editor**: vis
 * **Hotkey Daemon**: sxhkd
 * **Notifications**: dunst
 * **PDF Reader**: zathura
 * **Screenshot Tool**: scrot
 * **Image Viewer**: feh
 * **Video Player**: mpv
-* **Music Player**: cmus
+* **Music Player**: cmus or mpd/ncmpcpp
 * **ls**: exa 
 
 **Optional Programs**

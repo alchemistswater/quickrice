@@ -6,7 +6,15 @@ alias l='exa -FGhl --git'
 alias ltree='exa -FThl --git'
 alias tree='exa -FT'
 alias rls='exa -FR'
-alias accio='sudo bb-wrapper -S --aur '
-alias erised='bb-wrapper -Ss --aur '
-alias ascendio='sudo bb-wrapper -Syu --aur '
+
+#void aliases
+alias dreh='sudo xbps-install -Sy '
+alias paar='xbps-query -Rs '
+alias ofaal='sudo xbps-install -Syu'
+
+#arch aliases
+#alias dreh='yay -S '
+#alias paar='yay '
+#alias ofaal='yay'
+
 PS1='\u@\h \W \$ '

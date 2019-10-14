@@ -20,11 +20,9 @@ fi
 if [ -n "$DISPLAY" ]; then
     export BROWSER=firefox
 else 
-    export BROWSER=w3m
+    export BROWSER=lynx
 fi
 
-alias accio='yay '
-alias ascendio='yay -Syu '
 alias vim='vis'
 alias vi='vis'
 [[ -f "$ZSH/oh-my-zsh.sh" ]] \
