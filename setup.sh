@@ -3,32 +3,18 @@
 # Export the path to this directory for later use in the script
 export LINKDOT=$PWD
 
-# Install fonts and programs. Including two WMs, a terminal emulator
+# Install fonts and programs. Including HerbstluftWM, a terminal emulator
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
     kitty kitty-terminfo neofetch dash vis scrot \
     feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
-    diff-so-fancy \
+    diff-so-fancy telegram-desktop aerc calcurse \
     xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
     pulseaudio-alsa exa pavucontrol Profile-sync-daemon
 
-read -p "-- For music, use mpd + ncmpcpp instead of cmus? [y/N] " yna
-case $yna in
-    [Yy]* ) sudo pacman -S mpd ncmpcpp
-        patch home/.xinitrc < other/add-mpd.patch
-        ;;
-    * ) sudo pacman -S cmus;;
-esac
-
-# Optionally install some more programs. Including a file manager,
-# find, cat, grep, and curl replacements. And a powerful image viewer.
-read -p "-- Install extras? (ranger fd bat ripgrep httpie sxiv fzf) [Y/n] " ynb
-case $ynb in
-    ''|[Yy]* ) sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
-        ;;
-    * ) echo "-- Extras Skipped";;
-esac
+sudo pacman -S mpd ncmpcpp
+sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
 
 # Link dash to /bin/sh for performance boost.
 # Then link several font config files for better font display.
@@ -63,6 +49,10 @@ yay -S polybar compton rofi-pass pass-otp \
     redshift-qt sox imagemagick i3lock canto-curses
 
 cd ~/.aurpkgs/dotfiles
+
+sudo systemctl enable ckb-next-daemon
+systemctl --user enable psd
+
 
 # Link all dotfiles into their appropriate locations
 cd ~
