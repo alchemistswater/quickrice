@@ -53,8 +53,6 @@ cp wallpapers/* ~/Images/Wallpapers
 
 # Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
-git clone https://git.privacytools.io/silentfoof/dotfiles ~/.aurpkgs/dotfiles
-
 
 # Install them
 cd ~/.aurpkgs/yay
@@ -65,8 +63,6 @@ yay -S polybar compton rofi-pass pass-otp \
     redshift-qt sox imagemagick i3lock canto-curses
 
 cd ~/.aurpkgs/dotfiles
-sudo ln -sf ./scripts/glitchlock /usr/local/bin/
-sudo ln -sf ./scripts/invidion /usr/local/bin/
 
 # Link all dotfiles into their appropriate locations
 cd ~
@@ -75,5 +71,7 @@ ln -sf $LINKDOT/home/.* .
 cd ~/.config
 ln -sf $LINKDOT/config/* .
 
+cd /usr/bin
+sudo ln -sf $LINKDOT/scripts/* .
 
 echo "-- Installation Complete! Restart the computer."
