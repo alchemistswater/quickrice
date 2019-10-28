@@ -6,15 +6,17 @@ alias l='exa -FGhl --git'
 alias ltree='exa -FThl --git'
 alias tree='exa -FT'
 alias rls='exa -FR'
+alias icat='kitty +kitten icat '
+alias calsync="CALCURSE_CALDAV_PASSWORD=$(pass show calcurse) calcurse-caldav"
 
 #void aliases
-alias dreh='sudo xbps-install -Sy '
-alias paar='xbps-query -Rs '
-alias ofaal='sudo xbps-install -Syu'
+#alias dreh='sudo xbps-install -Sy '
+#alias paar='xbps-query -Rs '
+#alias ofaal='sudo xbps-install -Syu'
 
 #arch aliases
-#alias dreh='yay -S '
-#alias paar='yay '
-#alias ofaal='yay'
+alias accio='yay -S '
+alias erised='yay '
+alias ascendio='yay'
 
 PS1='\u@\h \W \$ '

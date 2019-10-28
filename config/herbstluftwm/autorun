@@ -1,10 +1,10 @@
 compton -b
 dunst &
-feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers &
+feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers/whiskey &
 sxhkd &
 mpd &
 mpdscribble &
 ckb-next &
 steam &
-redshift &
-synergy &
+redshift-qt &
+nextcloud &

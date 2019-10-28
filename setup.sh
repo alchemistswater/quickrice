@@ -6,12 +6,12 @@ export LINKDOT=$PWD
 # Install fonts and programs. Including two WMs, a terminal emulator
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
-    ttf-hack nextcloud-client ttf-linux-libertine rofi mpv pass \
+    ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
     kitty kitty-terminfo neofetch dash vis scrot \
     feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
-    diff-so-fancy zsh-autosuggestions zsh-syntax-highlighting \
+    diff-so-fancy \
     xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
-    pulseaudio-alsa exa pavucontrol
+    pulseaudio-alsa exa pavucontrol Profile-sync-daemon
 
 read -p "-- For music, use mpd + ncmpcpp instead of cmus? [y/N] " yna
 case $yna in
@@ -53,14 +53,20 @@ cp wallpapers/* ~/Images/Wallpapers
 
 # Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
+git clone https://git.privacytools.io/silentfoof/dotfiles ~/.aurpkgs/dotfiles
+
 
 # Install them
 cd ~/.aurpkgs/yay
 makepkg -si
 
-yay -S polybar compton-tryone-git rofi-pass pass-otp \
-    oh-my-zsh-git ckb-next steam steam-native-runtime \
-    mpdscribble redshift-qt sox imagemagick i3lock
+yay -S polybar compton rofi-pass pass-otp \
+    ckb-next steam steam-native-runtime greg-git\
+    redshift-qt sox imagemagick i3lock canto-curses
+
+cd ~/.aurpkgs/dotfiles
+sudo ln -sf ./scripts/glitchlock /usr/local/bin/
+sudo ln -sf ./scripts/invidion /usr/local/bin/
 
 # Link all dotfiles into their appropriate locations
 cd ~
@@ -68,5 +74,6 @@ ln -sf $LINKDOT/home/.* .
 
 cd ~/.config
 ln -sf $LINKDOT/config/* .
+
 
 echo "-- Installation Complete! Restart the computer."

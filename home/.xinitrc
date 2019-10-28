@@ -31,12 +31,8 @@ fi
 [ ! -s ~/.config/mpd/pid] && mpd &
 [ ! -s ~/.mpdscribble/pid] && mpdscribble &
 
-#exec xmonad
 exec herbstluftwm 
-#exec berry
-# If Emacs is started in server mode, `emacsclient` is a convenient way to
-# edit files in place (used by e.g. `git commit`).
-export VISUAL=emacsclient
+#exec sowm
+export VISUAL=vis
 export EDITOR="$VISUAL"
 
-#exec exwm

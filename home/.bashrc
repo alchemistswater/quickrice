@@ -16,13 +16,15 @@ export EDITOR=vis
 if [ -n "$DISPLAY" ]; then
     export BROWSER=firefox
 else 
-    export BROWSER=lynx
+    export BROWSER=w3m
 fi
 
-#source /usr/share/bash-completion/bash_completion
+source /usr/share/bash-completion/bash_completion
+source ~/.bashalias
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 function yta() {
 	    mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
     }
+

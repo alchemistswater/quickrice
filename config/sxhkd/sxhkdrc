@@ -48,7 +48,7 @@ super + d
 
 # Pass Launcher
 super + shift + d
-    rofi-pass
+    keepmenu
 
 # screen lock
 super + shift + z
@@ -60,7 +60,7 @@ super + Escape
 
 # Reload wallpaper
 super + alt + w
-    feh --bg-fill --no-fehbg --randomize ~/Images/Wallpapers
+    feh --bg-fill --no-fehbg --randomize ~/Images/Wallpapers/whiskey/
 
 # Capture Screenshot
 Print
