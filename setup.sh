@@ -48,20 +48,19 @@ yay -S polybar compton rofi-pass pass-otp \
     ckb-next steam steam-native-runtime greg-git\
     redshift-qt sox imagemagick i3lock canto-curses
 
-cd ~/.aurpkgs/dotfiles
+
+# Link all dotfiles into their appropriate locations
+cd ~
+ln -sf $LINKDOT/home/.* /home/$USER/
+
+cd ~/.config
+ln -sf $LINKDOT/config/* /home/$USER/.config/
+
+cd /usr/bin
+sudo ln -sf $LINKDOT/scripts/* /usr/bin/
 
 sudo systemctl enable ckb-next-daemon
 systemctl --user enable psd
 
-
-# Link all dotfiles into their appropriate locations
-cd ~
-ln -sf $LINKDOT/home/.* .
-
-cd ~/.config
-ln -sf $LINKDOT/config/* .
-
-cd /usr/bin
-sudo ln -sf $LINKDOT/scripts/* .
 
 echo "-- Installation Complete! Restart the computer."
