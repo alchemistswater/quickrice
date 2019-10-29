@@ -7,13 +7,13 @@ export LINKDOT=$PWD
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
-    kitty kitty-terminfo neofetch dash vis scrot \
+    kitty kitty-terminfo neofetch dash vim scrot \
     feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
     diff-so-fancy telegram-desktop aerc calcurse \
     xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
-    pulseaudio-alsa exa pavucontrol Profile-sync-daemon
+    pulseaudio-alsa exa pavucontrol
 
-sudo pacman -S mpd ncmpcpp
+sudo pacman -S mpd ncmpcpp mpc
 sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
 
 # Link dash to /bin/sh for performance boost.
@@ -45,8 +45,9 @@ cd ~/.aurpkgs/yay
 makepkg -si
 
 yay -S polybar compton rofi-pass pass-otp \
-    ckb-next steam steam-native-runtime greg-git\
-    redshift-qt sox imagemagick i3lock canto-curses
+    ckb-next steam steam-native-runtime greg-git \
+    redshift-qt sox imagemagick i3lock canto-curses \
+    profile-sync-daemon vis
 
 
 # Link all dotfiles into their appropriate locations
