@@ -50,7 +50,7 @@ yay -S polybar compton rofi-pass pass-otp \
     redshift-qt sox imagemagick i3lock canto-curses \
     profile-sync-daemon vis
 
-read -p "-- Install gaming goodness? May take a minute." yna
+read -p "-- Install gaming goodness? May take a minute. [y/N]" yna
 case $yna in
     [Yy]* ) yay -S steam steam-native-runtime mcpelauncher-msa-git \
         mcpelauncher-msa-ui-qt-git mcpelauncher-linux-git \
