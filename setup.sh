@@ -9,9 +9,9 @@ sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
     ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
     kitty kitty-terminfo neofetch dash vim scrot \
     feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
-    diff-so-fancy telegram-desktop aerc calcurse \
+    diff-so-fancy telegram-desktop calcurse \
     xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
-    pulseaudio-alsa exa pavucontrol
+    pulseaudio-alsa exa pavucontrol tmux
 
 sudo pacman -S mpd ncmpcpp mpc
 sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
@@ -35,20 +35,30 @@ mkdir -p ~/.config ~/.aurpkgs ~/Images/Captures ~/Images/Wallpapers \
     $LINKDOT/config/mpd/playlists ~/Music
 
 # Move provided wallpapers to the wallpapers folder
-cp wallpapers/* ~/Images/Wallpapers
+cp -r wallpapers/* ~/Images/Wallpapers
 
 # Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install them
 cd ~/.aurpkgs/yay
 makepkg -si
 
 yay -S polybar compton rofi-pass pass-otp \
-    ckb-next steam steam-native-runtime greg-git \
+    ckb-next greg-git aerc \
     redshift-qt sox imagemagick i3lock canto-curses \
     profile-sync-daemon vis
 
+read -p "-- Install gaming goodness? May take a minute." yna
+case $yna in
+    [Yy]* ) yay -S steam steam-native-runtime mcpelauncher-msa-git \
+        mcpelauncher-msa-ui-qt-git mcpelauncher-linux-git \
+        mcpelauncher-ui-git lib32-libpulse lib32-alsa-plugins \
+        lutris-wine-meta itch
+        ;;
+    * ) echo "-- skipping";;
+esac
 
 # Link all dotfiles into their appropriate locations
 cd ~
