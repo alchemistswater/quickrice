@@ -28,3 +28,4 @@ function yta() {
 	    mpv --ytdl-format=bestaudio ytdl://ytsearch:"$*"
     }
 
+. '/home/sifr/promptless.sh'

@@ -7,7 +7,11 @@ alias ltree='exa -FThl --git'
 alias tree='exa -FT'
 alias rls='exa -FR'
 alias icat='kitty +kitten icat '
-alias calsync="CALCURSE_CALDAV_PASSWORD=$(pass show calcurse) calcurse-caldav"
+#alias calsync="CALCURSE_CALDAV_PASSWORD=$(pass show calcurse) calcurse-caldav"
+
+alias rm='rmtrash --forbid-root'
+alias rmdir='rmdirtrash --forbid-root'
+alias sudo='sudo '
 
 #void aliases
 #alias dreh='sudo xbps-install -Sy '

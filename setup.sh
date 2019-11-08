@@ -72,6 +72,6 @@ sudo ln -sf $LINKDOT/scripts/* /usr/bin/
 
 sudo systemctl enable ckb-next-daemon
 systemctl --user enable psd
-
+curl "https://raw.githubusercontent.com/dylanaraps/promptless/master/install.sh" | sh
 
 echo "-- Installation Complete! Restart the computer."
