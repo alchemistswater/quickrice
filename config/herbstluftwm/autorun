@@ -1,4 +1,4 @@
-compton -b
+picom -b
 dunst &
 feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers/whiskey &
 sxhkd &
