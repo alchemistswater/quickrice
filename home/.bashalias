@@ -1,6 +1,5 @@
 alias startx="startx ~/.xinitrc"
-alias vi=vis
-alias vim=vis
+alias vi=vim
 alias ls='exa -F'
 alias l='exa -FGhl --git'
 alias ltree='exa -FThl --git'

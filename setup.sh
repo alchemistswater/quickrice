@@ -3,6 +3,10 @@
 # Export the path to this directory for later use in the script
 export LINKDOT=$PWD
 
+# Check that the arch keyring is up to date.
+sudo pacman -Sy archlinux-keyring
+sudo pacman-key --init
+
 # Install fonts and programs. Including HerbstluftWM, a terminal emulator
 # App launcher, screenshot tool, pdf viewer, image viewer, and text editor.
 
@@ -10,12 +14,12 @@ sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
             ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
             kitty kitty-terminfo neofetch dash vim scrot \
             feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
-            diff-so-fancy telegram-desktop calcurse \
+            diff-so-fancy telegram-desktop calcurse gnome-keyring\
             xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
             pulseaudio-alsa exa pavucontrol tmux
 
 sudo pacman -S mpd ncmpcpp mpc
-sudo pacman -S ranger fd bat ripgrep httpie sxiv fzf
+sudo pacman -S fff fd bat ripgrep httpie sxiv fzf
 
 # Link dash to /bin/sh for performance boost.
 # Then link several font config files for better font display.
@@ -41,15 +45,17 @@ cp -r wallpapers/* ~/Images/Wallpapers
 # Clone some yay goodness
 git clone https://aur.archlinux.org/yay.git ~/.aurpkgs/yay
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install them
 cd ~/.aurpkgs/yay
 makepkg -si
 
 yay -S polybar compton rofi-pass pass-otp \
-            ckb-next greg-git aerc \
+            ckb-next greg-git aerc kube \
             redshift-qt sox imagemagick i3lock canto-curses \
-            profile-sync-daemon vis
+            profile-sync-daemon ttf-font-awesome
 
 read -p "-- Install gaming goodness? May take a minute. [y/N]" yna
 case $yna in
