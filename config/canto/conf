@@ -348,7 +348,8 @@
             "maintag:DistroTube",
             "maintag:DorianDotSlash",
             "maintag:Unus Annus",
-            "maintag:The Spiffing Brit"
+            "maintag:The Spiffing Brit",
+            "maintag:Krinx TV"
         ],
         "update": {
             "auto": {
@@ -655,6 +656,10 @@
         {
             "name": "The Spiffing Brit",
             "url": "https://invidio.us/feed/channel/UCRHXUZ0BxbkU2MYZgsuFgkQ"
+        },
+        {
+            "name": "Krinx TV",
+            "url": "https://invidio.us/feed/channel/UCVnrocIyhRjygow1xd7HBYQ"
         }
     ],
     "tags": {

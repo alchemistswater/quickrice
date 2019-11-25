@@ -16,7 +16,7 @@ sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
             feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
             diff-so-fancy telegram-desktop calcurse gnome-keyring\
             xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
-            pulseaudio-alsa exa pavucontrol tmux
+            pulseaudio-alsa exa pavucontrol tmux bash-completion pamixer
 
 sudo pacman -S mpd ncmpcpp mpc
 sudo pacman -S fff fd bat ripgrep httpie sxiv fzf
@@ -52,17 +52,24 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cd ~/.aurpkgs/yay
 makepkg -si
 
-yay -S polybar compton rofi-pass pass-otp \
-            ckb-next greg-git aerc kube \
-            redshift-qt sox imagemagick i3lock canto-curses \
+yay -S polybar picom rofi-pass pass-otp \
+            ckb-next greg-git kube python-pywal \
+	    redshift-qt sox imagemagick i3lock canto-curses \
             profile-sync-daemon ttf-font-awesome
 
-read -p "-- Install gaming goodness? May take a minute. [y/N]" yna
+read -p "-- Install gaming goodness? May take a minute. [y/N] " yna
 case $yna in
             [Yy]* ) yay -S steam steam-native-runtime mcpelauncher-msa-git \
                             mcpelauncher-msa-ui-qt-git mcpelauncher-linux-git \
                             mcpelauncher-ui-git lib32-libpulse lib32-alsa-plugins \
-                            lutris-wine-meta itch
+                            lutris lutris-wine-meta itch
+                    ;;
+                        * ) echo "-- skipping";;
+esac
+
+read -p "-- Install communication goodness? May take a minute. [y/N] " yna
+case $yna in
+            [Yy]* ) yay -S telegram-desktop android-messages-desktop whatsapp-nativefier 
                     ;;
                         * ) echo "-- skipping";;
 esac
