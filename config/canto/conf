@@ -349,7 +349,9 @@
             "maintag:DorianDotSlash",
             "maintag:Unus Annus",
             "maintag:The Spiffing Brit",
-            "maintag:Krinx TV"
+            "maintag:Krinx TV",
+            "maintag:Purity Sin",
+            "maintag:LGR"
         ],
         "update": {
             "auto": {
@@ -660,6 +662,14 @@
         {
             "name": "Krinx TV",
             "url": "https://invidio.us/feed/channel/UCVnrocIyhRjygow1xd7HBYQ"
+        },
+        {
+            "name": "Purity Sin",
+            "url": "https://invidio.us/feed/channel/UCEx3_RBoQQ6HbsJl_EuAUOg"
+        },
+        {
+            "name": "LGR",
+            "url": "https://invidio.us/feed/channel/UCLx053rWZxCiYWsBETgdKrQ"
         }
     ],
     "tags": {

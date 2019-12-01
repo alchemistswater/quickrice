@@ -1,7 +1,7 @@
 picom -b
 dunst &
 #feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers/whiskey &
-wal -i ~/Images/Wallpapers/whiskey &
+wal -i ~/Images/Wallpapers/seasonal/christmas &
 sxhkd &
 mpd &
 mpdscribble &

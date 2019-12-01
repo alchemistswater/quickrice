@@ -60,7 +60,7 @@ super + Escape
 
 # Reload wallpaper
 super + alt + w
-    feh --bg-fill --no-fehbg --randomize ~/Images/Wallpapers/whiskey/
+    wal -i ~/Images/Wallpapers/seasonal/christmas/
 
 # Capture Screenshot
 Print
