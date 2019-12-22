@@ -38,12 +38,12 @@ Programs have been chosen at random based on other peoples skill and knowledge. 
 
 ### Installation
 
-This little script will install a collection of command line tools, two window managers, and a terminal emulator. Installation is easy:
+This little script will install a collection of command line tools, a window manager, and a terminal emulator. Installation is easy:
 
 1. Install Arch Linux and make sure you have `base-devel` and `git` packages.
-2. `git clone https://git.privacytools.io/silentfoof/quickrice ~/quickrice`
+2. `git clone https://github.com/alchemistswater/quickrice`
 3. `cd quickrice` (You **must** be inside the cloned directory)
-4. `sh install.sh`
+4. `sh setup.sh`
 5. Restart your computer after the script finishes.
 
 ### Usage
