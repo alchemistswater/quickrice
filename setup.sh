@@ -12,7 +12,7 @@ sudo pacman-key --init
 
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
             ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
-            kitty kitty-terminfo neofetch dash gvim scrot \
+            kitty kitty-terminfo dash gvim scrot \
             feh firefox sxhkd zathura-pdf-mupdf libnotify xclip \
             diff-so-fancy calcurse gnome-keyring xfce4-notifyd \
             xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
@@ -50,7 +50,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cd ~/.aurpkgs/yay
 makepkg -si
 
-yay -S polybar picom rofi-pass pass-otp \
+yay -S polybar picom rofi-pass pass-otp pfetch-git \
             ckb-next greg-git kube python-pywal \
 	    redshift-qt sox imagemagick i3lock canto-curses \
             profile-sync-daemon ttf-font-awesome
