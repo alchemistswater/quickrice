@@ -11,24 +11,21 @@ Programs have been chosen at random based on other peoples skill and knowledge. 
 * **Window Manager**: herbstluftwm
 * **Terminal**: Kitty
 * **Status Bar**: Polybar
-* **Shell**: Oh My Zsh 
+* **Shell**: bash/promptless 
 * **App Launcher**: Rofi
-* **System Info**: Neofetch
-* **Text Editor**: vis
+* **System Info**: pfetch
+* **Text Editor**: gvim
 * **Hotkey Daemon**: sxhkd
-* **Notifications**: dunst
+* **Notifications**: xfce4-notifyd
 * **PDF Reader**: zathura
 * **Screenshot Tool**: scrot
 * **Image Viewer**: feh
 * **Video Player**: mpv
-* **Music Player**: cmus or mpd/ncmpcpp
+* **Music Player**: mpd/ncmpcpp
 * **ls**: exa 
-
-**Optional Programs**
-
 * **Fuzzy Search**: fzf
-* **File Manager**: ranger
-* **Image Viewer**: sxiv
+* **File Manager**: fff
+* **Image Viewer**: feh
 * **Music Daemon**: mpd
 * **Music Player**: ncmpcpp
 * **find**: fd

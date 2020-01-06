@@ -12,9 +12,9 @@ sudo pacman-key --init
 
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
             ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
-            kitty kitty-terminfo neofetch dash vim scrot \
+            kitty kitty-terminfo neofetch dash gvim scrot \
             feh firefox sxhkd zathura-pdf-mupdf libnotify xclip \
-            diff-so-fancy calcurse gnome-keyring \
+            diff-so-fancy calcurse gnome-keyring xfce4-notifyd \
             xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
             pulseaudio-alsa exa pavucontrol tmux bash-completion pamixer \
 	    mpd ncmpcpp mpc fff fd bat ripgrep httpie sxiv fzf
@@ -87,5 +87,11 @@ systemctl --user enable psd
 
 cd ~
 curl "https://raw.githubusercontent.com/dylanaraps/promptless/master/install.sh" | sh
+
+su -c 'cat > /usr/share/dbus-1/services/org.freedesktop.Notifications.service << "EOF"
+[D-BUS Service]
+Name=org.freedesktop.Notifications
+Exec=/usr/lib/xfce4/notifyd/xfce4-notifyd
+EOF'
 
 echo "-- Installation Complete! Restart the computer."
