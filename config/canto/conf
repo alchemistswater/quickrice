@@ -351,7 +351,16 @@
             "maintag:The Spiffing Brit",
             "maintag:Krinx TV",
             "maintag:Purity Sin",
-            "maintag:LGR"
+            "maintag:LGR",
+            "maintag:Sleepless Domain",
+            "maintag:Forgotten Order",
+            "maintag:Saturday Morning Breakfast Cereal",
+            "maintag:Explosm.net",
+            "maintag:Far to the North",
+            "maintag:Aquapunk",
+            "maintag:Godslave",
+            "maintag:[un]Divine",
+            "maintag:Paranatural"
         ],
         "update": {
             "auto": {
@@ -670,6 +679,42 @@
         {
             "name": "LGR",
             "url": "https://invidio.us/feed/channel/UCLx053rWZxCiYWsBETgdKrQ"
+        },
+        {
+            "name": "Sleepless Domain",
+            "url": "http://www.sleeplessdomain.com/rss.php"
+        },
+        {
+            "name": "Forgotten Order",
+            "url": "http://www.forgottenordercomic.com/rss.php"
+        },
+        {
+            "name": "Saturday Morning Breakfast Cereal",
+            "url": "http://www.smbc-comics.com/comic/rss"
+        },
+        {
+            "name": "Far to the North",
+            "url": "http://www.farnorthcomic.com/rss.php"
+        },
+        {
+            "name": "Explosm.net",
+            "url": "http://feeds.feedburner.com/Explosm"
+        },
+        {
+            "name": "Aquapunk",
+            "url": "http://www.aquapunk.co/rss.php"
+        },
+        {
+            "name": "Godslave",
+            "url": "http://www.godslavecomic.com/comic/rss"
+        },
+        {
+            "name": "[un]Divine",
+            "url": "http://www.undivinecomic.com/comic/rss"
+        },
+        {
+            "name": "Paranatural",
+            "url": "http://www.paranatural.net/rss.php"
         }
     ],
     "tags": {

@@ -11,14 +11,14 @@
 #
 
 # Volume Control
-XF86AudioRaiseVolume
-    dash -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"
+#XF86AudioRaiseVolume
+#    dash -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"
 
-XF86AudioLowerVolume
-    dash -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"
+#XF86AudioLowerVolume
+#    dash -c "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
-XF86AudioMute
-    pactl set-sink-mute @DEFAULT_SINK@ toggle
+#XF86AudioMute
+#    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Media Control
 XF86AudioPlay
@@ -35,11 +35,11 @@ super + XF86AudioRaiseVolume
     mpc volume -5
 
 # Terminal Emulator
-super + Return
-    kitty	
+#super + Return
+#    kitty	
 
 # Browser
-super + w
+super + shift + w
    firefox
 
 # Program Launcher
@@ -60,11 +60,11 @@ super + Escape
 
 # Reload wallpaper
 super + alt + w
-    wal -i ~/Images/Wallpapers/anime/
+    bud ~/Images/Wallpapers/anime/
 
 # Capture Screenshot
 Print
-    maim -u ~/Images/Captures/$(date +%s).png && dunstify "Cheese!~" "Screenshot saved to ~/Images/Captures"
+    scr
 
 # Capture Selection 
 super + Print

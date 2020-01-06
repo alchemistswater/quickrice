@@ -30,3 +30,4 @@ function yta() {
 
 . '/home/sifr/promptless.sh'
 
+. '/home/sifr/promptless.sh'

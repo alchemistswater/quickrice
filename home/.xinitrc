@@ -31,8 +31,12 @@ fi
 [ ! -s ~/.config/mpd/pid] && mpd &
 [ ! -s ~/.mpdscribble/pid] && mpdscribble &
 
-exec herbstluftwm 
+mpd &
+exec herbstluftwm
+#polybar -c /home/sifr/.config/herbstluftwm/config-polybar hlwm &
+#sxhkd -c /home/sifr/.config/sowmsxhkd &
+#picom &
 #exec sowm
-export VISUAL=vis
+export VISUAL=vim
 export EDITOR="$VISUAL"
 

@@ -13,13 +13,11 @@ sudo pacman-key --init
 sudo pacman -S go ttf-joypixels ttf-croscore noto-fonts-cjk noto-fonts \
             ttf-hack nextcloud-client ttf-linux-libertine rofi mpv \
             kitty kitty-terminfo neofetch dash vim scrot \
-            feh firefox sxhkd dunst zathura-pdf-mupdf libnotify xclip \
-            diff-so-fancy telegram-desktop calcurse gnome-keyring\
+            feh firefox sxhkd zathura-pdf-mupdf libnotify xclip \
+            diff-so-fancy calcurse gnome-keyring \
             xorg-server xorg-xinit xorg-xrdb xorg-xprop herbstluftwm \
-            pulseaudio-alsa exa pavucontrol tmux bash-completion pamixer
-
-sudo pacman -S mpd ncmpcpp mpc
-sudo pacman -S fff fd bat ripgrep httpie sxiv fzf
+            pulseaudio-alsa exa pavucontrol tmux bash-completion pamixer \
+	    mpd ncmpcpp mpc fff fd bat ripgrep httpie sxiv fzf
 
 # Link dash to /bin/sh for performance boost.
 # Then link several font config files for better font display.
@@ -69,7 +67,7 @@ esac
 
 read -p "-- Install communication goodness? May take a minute. [y/N] " yna
 case $yna in
-            [Yy]* ) yay -S telegram-desktop android-messages-desktop whatsapp-nativefier 
+            [Yy]* ) yay -S telegram-desktop whatsapp-nativefier 
                     ;;
                         * ) echo "-- skipping";;
 esac

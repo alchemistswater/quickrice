@@ -1,7 +1,7 @@
 picom -b
-dunst &
+#dunst &
 #feh --no-fehbg --randomize --bg-fill ~/Images/Wallpapers/whiskey &
-wal -i ~/Images/Wallpapers/seasonal/christmas &
+wal -i ~/Images/Wallpapers/anime &
 sxhkd &
 mpd &
 mpdscribble &
@@ -9,3 +9,4 @@ ckb-next &
 steam &
 redshift-qt &
 nextcloud &
+kdeconnect-indicator &
